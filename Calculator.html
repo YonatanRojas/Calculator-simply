@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Data">
+    <meta name="description" content="Calculator that help you for doing equations in secons with the right functionalities. aproved for by UL">
+    <meta name="author" content="Yonatan Rojas">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link rel="icon" href="">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="charms bar.css">
+    <link rel="stylesheet" type="text/css" href="CSS calculator.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a class="active" href="#">home</a></li>
+            <li><a href="#">equations</a></li>
+            <li><a href="#">scientific calculator</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="col-2" onclick="display.borrarTodo()">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">X</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Author: Rojas Yonatan </p>
+        <p>Contacto/red social,instagram: yonatan6731</p>
+    </footer>
+
+    
+    <script type="text/javascript" src="JS calculator.js" defer></script>
+    <script type="text/javascript" src="display.js"></script>
+    <script type="text/javascript" src="calculadora function.js"></script>
+</body>
+</html>
